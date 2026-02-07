@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amazon</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>bulb</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+    </style>
+    <script>// JavaScript function to change the image source based on the button clicked
+        function clickMe(state){
+            document.body.style.backgroundColor = state === 'on' ? "yellow" : "black";
+        }
+    </script>
 </head>
-<body>
-    <div id="navbar">
-        <a id="logo">Amazon.in</a>
-        <a>My Account</a>
-        <a>My Card</a>
-        <a>My order</a>
-        <input placeholder="search">
-        <button>click me</button>
-    </div>
-    
+<body >
+    <img width="200" src="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg" alt="tips" id="tips">
+    <button style="background-color: green;" onclick="clickMe('on')">ON</button> 
+    <button style="background-color: red;" onclick="clickMe('off')">OFF</button>
+    <script>
+       
+    </script>
 </body>
 </html>
