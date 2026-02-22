@@ -3,28 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bulb</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-        }
-    </style>
-    <script>// JavaScript function to change the image source based on the button clicked
-        function clickMe(state){
-            document.body.style.backgroundColor = state === 'on' ? "yellow" : "black";
-        }
-    </script>
+    <title>Document</title>
+    <style></style>
 </head>
-<body >
-    <img width="200" src="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg" alt="tips" id="tips">
-    <button style="background-color: green;" onclick="clickMe('on')">ON</button> 
-    <button style="background-color: red;" onclick="clickMe('off')">OFF</button>
-    <script>
-       
+<body id="body">
+    <script> 
+        var h = document.createElement("header");
+        h.innerText = "header";
+        // console.log(h);
+        //document.getElementById("body").appendChild(h);   or
+        document.body.appendChild(h);
+        document.querySelector("header").setAttribute("class", "header");
+        document.body.style.margin = "0px";
+       var  headerElement = document.getElementsByClassName("header");
+         headerElement[0].style.width = "100%";
+         headerElement[0].style.height = "150px";
+         headerElement[0].style.border = "2px solid #333";
+        let y = document.getElementsByTagName("header")[0].style;
+        y.backgroundColor = "lightblue";
+        y.textAlign = "center";
+        y.lineHeight = "150px";
+        y.fontSize = "30px";
+        y.fontWeight = "bold";
+        y.fontFamily = "Arial, sans-serif";
+         var nav = document.createElement("aside1");
+            nav.innerText = "aside1";
+            document.body.appendChild(nav);
+            document.querySelector("aside1").setAttribute("class", "nav");
+            var navElement = document.getElementsByClassName("nav");
+            navElement[0].style.width = "24%";
+            navElement[0].style.height = "300px";
+            navElement[0].style.border = "2px solid #333";
+            let n = document.getElementsByTagName("aside1")[0].style;
+            n.backgroundColor = "lightgray";
+            n.lineHeight = "300px";
+            n.fontSize = "30px";
+            n.fontWeight = "bold";
+            n.fontFamily = "Arial, sans-serif";
+            n.textAlign = "center";
+            n.margin = "5px";
+            n.display = "inline-block";
+
+         var main = document.createElement("main");
+            main.innerText = "main";
+            document.body.appendChild(main);
+            document.querySelector("main").setAttribute("class", "main");
+            var mainElement = document.getElementsByClassName("main");
+            mainElement[0].style.width = "50%";
+            mainElement[0].style.height = "300px";
+            mainElement[0].style.border = "2px solid #333";
+            let m = document.getElementsByTagName("main")[0].style;
+
+            m.backgroundColor = "lightgray";
+            m.textAlign = "center";
+            m.lineHeight = "300px";
+            m.fontSize = "30px";
+            m.fontWeight = "bold";
+            m.fontFamily = "Arial, sans-serif";
+            m.display = "inline-block";
+        var aside = document.createElement("aside");
+            aside.innerText = "aside";
+            document.body.appendChild(aside);
+            document.querySelector("aside").setAttribute("class", "aside");
+            var asideElement = document.getElementsByClassName("aside");
+            asideElement[0].style.width = "24%";
+            asideElement[0].style.height = "300px";
+            asideElement[0].style.border = "2px solid #333";
+            let a = document.getElementsByTagName("aside")[0].style;
+            a.backgroundColor = "lightgray";
+            a.textAlign = "center";
+            a.lineHeight = "300px";
+            a.fontSize = "30px";
+            a.fontWeight = "bold";
+            a.fontFamily = "Arial, sans-serif"; 
+            a.marginLeft = "5px";
+            a.display = "inline-block";
+
+        var footer = document.createElement("footer");
+             footer.innerText = "footer";
+             document.body.appendChild(footer);
+             document.querySelector("footer").setAttribute("class", "footer");
+             var footerElement = document.getElementsByClassName("footer");
+             footerElement[0].style.width = "100%";
+             footerElement[0].style.height = "150px";
+             footerElement[0].style.border = "2px solid #333";
+             let f = document.getElementsByTagName("footer")[0].style;
+             f.backgroundColor = "lightblue";
+             f.textAlign = "center";
+             f.lineHeight = "150px";
+             f.fontSize = "30px";
+             f.fontWeight = "bold";
+             f.fontFamily = "Arial, sans-serif";
+
     </script>
 </body>
 </html>
